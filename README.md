@@ -12,11 +12,13 @@ It is allows you to easily authenticate with Salesforce using OAuth (User Ajent 
 
 ## Installation
 
-```tns plugin add nativescript-salesforce-sdk```
+```
+tns plugin add nativescript-salesforce-sdk
+```
 
 ## Uses
 
-```
+```javascript
   let auth = new Auth(page); // must need to pass page object
   let config:IWebAuth = {
     clientId:'3MVG9YDQS5WtC11p8U6jHYOrOLWdUuHO5tK5jXMv0mQCyzZ0cdjYUd93RGSCpQdP87VL6hQbUO3fXYRmAkJxq', 
