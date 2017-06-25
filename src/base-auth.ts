@@ -1,7 +1,6 @@
 import { Observable, EventData, fromObject } from 'data/observable';
 import { IWebAuth, IAuth, IUser, IToken} from './interfaces';
 import {WebView, LoadEventData} from 'ui/web-view';
-import queryString = require('query-string');
 import {Page} from 'ui/page';
 import {Label} from 'ui/label';
 import * as frame from 'ui/frame';

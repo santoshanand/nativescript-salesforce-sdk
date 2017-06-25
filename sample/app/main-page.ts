@@ -37,7 +37,7 @@ export function onNavigatedTo(args:EventData) {
     // Query
     Apex.query('select id, Name from Account')
       .then((data)=> {
-      console.log(JSON.stringify(data.content.toJSON().totalSize));
+      // console.log(JSON.stringify(data.content.toJSON().totalSize));
       if(model !== undefined) {
         model.items = data.content.toJSON().records;
       }

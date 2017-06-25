@@ -50,7 +50,6 @@ export class WebPage extends Page {
     this.webView.on('loadFinished', (args)=> {
       if(utils.hasString(args.url || '', LOGOUT_URL)) {
         storage.removeAccessToken();
-        console.log('Logout succcess ');
       } 
     });
   }

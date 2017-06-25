@@ -1,7 +1,6 @@
 import { IWebAuth, IAuth, IUser, IToken } from './interfaces';
 import { AUTHORIZE_URL, REVOKE_URL, TOKEN_KEY, LOGOUT_URL} from './constants';
 import AppSettings        = require("application-settings");
-import queryString        = require('query-string');
 import * as storage from './storage';
 import {EventData, fromObject} from 'data/observable';
 let codeString:string     = 'code=';
@@ -29,6 +28,14 @@ export function getCodeString(value:string) {
     code = value.substr(startIndex, value.length); 
   }
   return code;
+}
+export function parseQueryString(search:string) {
+  var obj = search.split("&").reduce(function(prev, curr, i, arr) {
+    var p = curr.split("=");
+    prev[decodeURIComponent(p[0])] = decodeURIComponent(p[1]);
+    return prev;
+  }, {});
+  return obj;
 }
 
 export function getTokenString(value:string) {

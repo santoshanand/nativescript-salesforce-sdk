@@ -42,7 +42,5 @@
   "license": "MIT",
   "homepage": "https://github.com/santoshanand/nativescript-salesforce-sdk",
   "readmeFilename": "README.md",
-  "dependencies": {
-    "query-string": "^4.3.4"
-  }
+  "dependencies": {}
 }

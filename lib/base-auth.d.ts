@@ -8,7 +8,7 @@ export declare class BaseAuth extends Observable {
     private _tokenData;
     constructor(page: Page);
     protected doWebLogin(): void;
-    doLogout(page: Page): void;
+    protected doLogout(page: Page): void;
     private openWebPage(url);
     tokenData: IToken;
     private setTokenAndCloseLogin(value);

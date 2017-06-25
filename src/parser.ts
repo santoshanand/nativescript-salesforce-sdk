@@ -1,7 +1,6 @@
 import * as utils from './utils';
 import { EventData, fromObject }from 'data/observable';
 import { IWebAuth, IAuth, IUser, IToken } from './interfaces';
-import queryString        = require('query-string');
 import * as storage from './storage';
 
 export function code(url:string) {
@@ -11,7 +10,7 @@ export function token(url:string) {
   let tokenObject:IToken;
   let tokenString = utils.getTokenString(url) || '';
   if(tokenString !== '') {
-    let parsedData = queryString.parse(tokenString) || {};
+    let parsedData = utils.parseQueryString(tokenString) || {};
     tokenObject = getTokenObject(parsedData);
   }
   return tokenObject; 
