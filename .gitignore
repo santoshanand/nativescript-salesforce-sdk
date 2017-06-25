@@ -1,0 +1,14 @@
+*.js
+*.js.map
+*.log
+!scripts/*.js
+sample/app/*.js
+!sample/karma.conf.js
+!sample/app/tests/*.js
+sample/*.d.ts
+!sample/references.d.ts
+sample/lib
+sample/platforms
+sample/node_modules
+node_modules
+.DS_Store

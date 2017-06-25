@@ -1,0 +1,48 @@
+{
+  "name": "nativescript-salesforce-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index",
+  "typings": "lib",
+  "scripts": {
+    "build": "rm -rf lib && tsc -p .",
+    "prepair": "npm run build && cd sample && tns plugin remove nativescript-salesforce-sdk && tns plugin add ..",
+    "ios": "npm run prepair && cd sample && tns run ios --emulator"
+  },
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    },
+    "tns-ios": {
+      "version": "3.0.1"
+    }
+  },
+  "devDependencies": {
+    "tns-core-modules": "^3.0.1",
+    "typescript": "^2.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santoshanand/nativescript-salesforce-sdk.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "author": {
+    "name": "Santosh Anand (http://santoshanand.me)",
+    "email": "santoshanand.jogi@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/santoshanand/nativescript-salesforce-sdk/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/santoshanand/nativescript-salesforce-sdk",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "query-string": "^4.3.4"
+  }
+}

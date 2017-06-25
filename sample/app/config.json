@@ -1,0 +1,6 @@
+{
+  "clientId":"3MVG9YDQS5WtC11p8U6jHYOrOLWdUuHO5tK5jXMv0mQCyzZ0cdjYUd93RGSCpQdP87VL6hQbUO3fXYRmAkJxq",
+  "clientSecret":"7038693296277472914", // optional
+  "callbackUrl":"ns://nativescript/sdk",
+  "scope":"refresh_token, offline_access, full, api"
+}
