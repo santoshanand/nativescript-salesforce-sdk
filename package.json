@@ -7,7 +7,8 @@
   "scripts": {
     "build": "rm -rf lib && tsc -p .",
     "prepair": "npm run build && cd sample && tns plugin remove nativescript-salesforce-sdk && tns plugin add ..",
-    "ios": "npm run prepair && cd sample && tns run ios --emulator"
+    "ios": "npm run prepair && cd sample && tns run ios --emulator",
+    "publish": "npm version patch && npm publish"
   },
   "nativescript": {
     "platforms": {
